@@ -1,0 +1,15 @@
+.navbar.navbar-fixed-top
+ .navbar-inner
+  = link_to 'RDT Ltd.', root_path, { class:'brand'}, remote: true
+  %ul.nav.pull-right
+   %li
+    = link_to 'Home', root_path, remote: true
+   %li.divider-vertical
+   %li
+    %a{href:"#"} Videos
+   %li.divider-vertical
+   %li
+    = link_to 'Pictures', pics_path, remote: true
+   %li.divider-vertical
+   %li
+    %a{href:"#"} Sign in

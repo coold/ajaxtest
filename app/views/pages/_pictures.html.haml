@@ -1,0 +1,5 @@
+%ul.thumbnails
+ - (1..4).each do |i|
+  %li.span4
+   %a.thumbnail{href:"assets/#{i}.jpg"}
+    = image_tag "#{i}.jpg"
