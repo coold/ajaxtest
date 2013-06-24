@@ -14,3 +14,8 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
+//= require wiselinks
+
+$(document).ready(function() {
+    window.wiselinks = new Wiselinks(".container");
+    });

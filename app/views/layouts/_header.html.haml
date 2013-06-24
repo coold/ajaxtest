@@ -1,15 +1,15 @@
 .navbar.navbar-fixed-top
  .navbar-inner
-  = link_to 'RDT Ltd.', root_path, { class:'brand'}, remote: true
+  = link_to 'RDT Ltd.', root_path, { class:'brand', "data-push"=> "partial", "data-target"=>".container"}
   %ul.nav.pull-right
    %li
-    = link_to 'Home', root_path, remote: true
+    = link_to 'Home', root_path, {"data-push"=> "partial", "data-target"=>".container"}
    %li.divider-vertical
    %li
-    %a{href:"#"} Videos
+    = link_to 'Videos', video_path, {"data-push"=> "partial", "data-target"=>".container"}
    %li.divider-vertical
    %li
-    = link_to 'Pictures', pics_path, remote: true
+    = link_to 'Pictures', pics_path, {"data-push"=> "partial", "data-target"=>".container"}
    %li.divider-vertical
    %li
     %a{href:"#"} Sign in

@@ -1,6 +1,7 @@
 Haml2::Application.routes.draw do
   root to: 'pages#index'
   match '/pics', to: 'pages#pictures'
+  match '/video', to: 'pages#video'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
